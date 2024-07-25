@@ -6,7 +6,7 @@ description: >
   This is a collaction of projects that I've been working on or worked on.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [main project, work, fun]
 horizontal: false
 ---
 

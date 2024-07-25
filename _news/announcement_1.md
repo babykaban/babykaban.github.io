@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-First anouncment
+[Very first blog post is now up!!!](/blog/2024/welcome-to-the-spellweaver-saga-blog/)

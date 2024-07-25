@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Spellweaver Saga Retrieving The Legendary Relic
+description: This is the first video game that has been developing by babykaban
+img: assets/img/test.jpg
 importance: 1
-category: work
+category: main project
 related_publications: true
 ---
 
