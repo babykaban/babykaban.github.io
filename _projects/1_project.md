@@ -1,25 +1,16 @@
 ---
 layout: page
 title: Spellweaver Saga Retrieving The Legendary Relic
-description: This is the first video game that has been developing by babykaban
-img: assets/img/test.jpg
+description: This is the first video game that babykaban has been working on.
+img: /assets/img/test.jpg
 importance: 1
 category: main project
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+"Spellweaver Saga: Retrieving The Legendary Relic": is a magical fantasy adventure set in an open-world 
+environment reminiscent of the Middle Ages. Player combines magic elements to cast spells, explore 
+different locations, and interact with various creatures and mystical entities.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
