@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Welcome to the Spellweaver Saga Blog!"
+title: Welcome to the Spellweaver Saga Blog!
 date: 2024-07-23
 description: Very First Blog Post
 categories: blog
@@ -20,7 +20,7 @@ This game is being developed on a custom engine written in C/C++. I chose to dev
 One of the most significant challenges was the overall development process. I was able to overcome many hurdles thanks to the guidance provided by the video series Handmade Hero by Casey Muratori and other internet sources. These resources have been invaluable in helping me understand game development on a deeper level.
 
 # Prototype Features
-The current prototype includes a basic map layout, a few quests, and the core mechanic of combining elements. This mechanic will undergo a complete overhaul in the next version of the game. Over the last few months, I have also been working on the game's editor, which is a crucial part of the development process. The editor currently has the capability to create custom asset files for the game.
+The current prototype includes a basic map layout, a few quests, and the core mechanic of combining elements. This mechanic will be significantly improved in the next version of the game. Over the last few months, I have also been working on the game's editor, which is a crucial part of the development process. The editor currently has the capability to create custom asset files for the game.
 
 # Next Steps
 The next steps in the development process include finishing the editor and starting on the first levels and designs of the game. I am excited to continue this journey and share updates with you as the game progresses.
