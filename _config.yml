@@ -12,7 +12,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   the Middle Ages, it features a world filled with magic and mysterious creatures. In this game, you
   play as a young mage who learns to utilize elemental magic to complete quests, solve puzzles, and
   fight creatures in the quest to find the mysterious artifact his mentor was searching for. The game
-  also offers rich world exploration, allowing you to uncover hidden secrets, and immerse yourself 
+  also offers rich world exploration, allowing you to uncover hidden secrets, and immerse yourself
   in a captivating medieval fantasy environment.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
@@ -20,7 +20,7 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: blog, spellweaver saga, spellweaver, solodrai, babykaban, game engine # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: ⚛ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://babykaban.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -33,8 +33,8 @@ back_to_top: true # set to false to disable the back to top button
 # -----------------------------------------------------------------------------
 
 # repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_light: github_dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_dark: github_dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
   enabled: true
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
