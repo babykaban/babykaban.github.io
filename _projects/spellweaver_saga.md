@@ -64,5 +64,6 @@ I have made a prototype with a basic map layout, few quests, and of course the m
 
 ### Links
 - [Game Prototype Demo](https://www.youtube.com/watch?v=7211-m05OSI)
+- [Download Prototype (Windows)](https://www.dropbox.com/scl/fi/o19hvrn03cid64rf7k1xb/game.rar)
 - [Blog](/blog/)
 - [BabyKaban GitHub](https://github.com/babykaban)
