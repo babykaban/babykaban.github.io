@@ -38,7 +38,7 @@ The protagonist embarks on a quest to find an ancient artifact to protect his vi
 researched by his mentor, who has mysteriously disappeared. Overall the story looks simple but I still divided it into few acts.
 
 ## Gameplay Elements
-As I steted above the main gameplay element will be magic-crafting system, however the other like NPCs, quests, real-time combats.
+As stated above, the main gameplay element will be a magic-crafting system, complemented by NPCs, quests, and real-time combat.
 
 ## Visual Style
 I had a long thinking process on what art style I want to use, but just out of simplicity decided to use pixel art with a vibrant 
