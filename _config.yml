@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Spellweaver Saga # the website title (if blank, full name will be used instead)
+title: BabyKaban # the website title (if blank, full name will be used instead)
 first_name: Paul
 middle_name: I.
 last_name: Solodrai
@@ -52,10 +52,10 @@ rss_icon: false
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
-bib_search: true
+bib_search: false
 
 # Dimensions
 max_width: 930px
