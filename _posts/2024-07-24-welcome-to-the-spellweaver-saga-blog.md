@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Welcome to the Spellweaver Saga Blog!
-date: 2024-07-23
+date: 2024-07-24
 description: Very First Blog Post
 categories: blog
 ---

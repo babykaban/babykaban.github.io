@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing Spellweaver Saga World Map (SSWM)
-date: 2024-07-23
+date: 2024-07-29
 description: Editor update
 categories: blog
 ---
