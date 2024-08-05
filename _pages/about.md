@@ -2,8 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: >
-
+subtitle: <a href='https://www.youtube.com/watch?v=7211-m05OSI'>Watch Demo</a> | <a href='/projects/spellweaver_saga'>Game Page</a>
 profile:
   align: right
   image: logo.jpeg

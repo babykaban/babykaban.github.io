@@ -222,8 +222,31 @@ Finally, `ClearStack` resets the entire stack, clearing all stored actions.
 
 The journey doesn't end here! I’m already working on implementing navigation meshes and will continue refining the editor to enhance 
 usability and expand its capabilities. My goal is to make building the world of Spellweaver Saga as intuitive and enjoyable as possible.
-There is a little gelery below, you can check it out. 
+There is a little gallery below, you can check it out. 
 
 Happy spellweaving,
-**[BabyKaban](https://github.com/babaykaban)**
+**[BabyKaban](https://github.com/babykaban)**
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/editor_picture_0.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/editor_picture_1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/editor_picture_2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/editor_picture_3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/editor_picture_4.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/editor_picture_5.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
