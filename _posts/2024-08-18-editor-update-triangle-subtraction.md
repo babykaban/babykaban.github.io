@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Triange Boolean Subtraction
+title: Triangle Boolean Subtraction
 date: 2024-08-18
 description: Editor update
 categories: blog
@@ -186,7 +186,7 @@ IntersectLineSegmentF32(polygon2 *A, v2 p1, v2 p2, v2 *Points, s32 *PointCount, 
 For the example illustrated above, the table will look like this:
 
 | Edge Start Index | Edge End Index | Point Count |
-| :--------------: | :------------: | :---------: |
+| :--------------- | :------------- | :---------- |
 | 0                | 1              | 0           |
 | 1                | 2              | 2           |
 | 2                | 3              | 2           |
