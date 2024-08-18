@@ -184,6 +184,7 @@ IntersectLineSegmentF32(polygon2 *A, v2 p1, v2 p2, v2 *Points, s32 *PointCount, 
 }
 ```
 For the example illustrated above, the table will look like this:
+
 | Edge Start Index | Edge End Index | Point Count |
 | :--------------: | :------------: | :---------: |
 | 0                | 1              | 0           |
@@ -206,6 +207,7 @@ outside, if it is a crossing point, which point it crosses, a processed flag, an
 As a result, we have two tables that look like this:
 
 *Subject Vertex Info*
+
 | Vertex Index | Point (x, y) | Outside Flag | Cross | Processed Flag |
 | :----------: | :----------: | :----------: | :---: | :------------: |
 | 0            | (-8, 12)     | true         | -1    | false          |
@@ -218,6 +220,7 @@ As a result, we have two tables that look like this:
 | 7            | (-8, 12)     | true         | -1    | false          |
 
 *Subtractor Vertex Info*
+
 | Vertex Index | Point (x, y) | Outside Flag | Cross | Processed Flag |
 | :----------: | :----------: | :----------: | :---: | :------------: |
 | 0            | (-0.9, 5.5)  | false        | 6     | false          |
