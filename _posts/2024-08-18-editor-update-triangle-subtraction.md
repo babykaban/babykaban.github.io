@@ -8,17 +8,38 @@ pretty_table: true
 ---
 
 ## Introduction
-The need to create holes in navigation mesh polygons, described as obstacles, led me to develop
-this algorithm. Initially, I researched existing algorithms that could perform this task, but I couldn't
+In game development, navigation meshes are useful for defining walkable areas where AI characters can move. 
+These meshes are made up of interconnected polygons that represent navigable surfaces, allowing for 
+efficient pathfinding. My game uses navigation meshes for AI and player movement control. The need to handle dynamic 
+obstacles was the main reason I developed this algorithm. The algorithm subtracts two triangles by 
+removing the overlapping part from one of the triangles.
+
+Here is an example:
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/subtract_example_0.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/subtract_example_1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="caption">
+    On the left are triangles before the subtraction and on the right after.
+</div>
+
+To create an obstacle on a navigation mesh, we need to mark the walkable area as unwalkable, 
+which literally involves making a hole in the navigation polygon.
+
+Initially, I researched existing algorithms that could perform this task, but I couldn't
 find any ready-to-use solutions. However, I did find a detailed documentation that outlines 
 how to construct such an algorithm, which you can check out [here](https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-SA-97135.pdf).
 
 Using this as a foundation, I started building the algorithm. After some tests on various polygon types 
-and the decision to use single precision floating point, the algorithm began to exhibit issues—sometimes 
+and the decision to use single precision floating point, the algorithm began to show issues — sometimes 
 crashing, other times producing incorrect results.
 
-To simplify the task, I opted to perform the subtraction on triangles, reducing the possible cases to 20. 
-From here, I began developing the algorithm based on the documentation's guidelines.
+To simplify the task, I decided to perform the subtraction on triangles, reducing the possible cases to 20. 
+From here, I began developing the algorithm based on `JE Wilson's` guidelines.
 
 For those who just want to see or use the code without reading through the whole explanation, here's the [GitHub link](https://github.com/babykaban/Triangle-Boolean-Subtraction-Algorithm).
 
@@ -34,8 +55,9 @@ The image below will appear throughout the implementation steps to illustrate ho
 </div>
 
 The first step is to check if two triangles overlap, excluding edges and vertices. For this, I used the [Separating Axis Theorem (SAT)](https://dyn4j.org/2010/01/sat/). 
-Then, I corrected the triangles' orientation. The documentation suggests calculating an offset based on the polygons' orientation, but for simplicity, 
+Then, I corrected the triangles' orientation. The `JE Wilson` suggests calculating an offset based on the polygons' orientation, but for simplicity, 
 I made the algorithm work only on clockwise triangles. If necessary, the triangles are reoriented by swapping the second and last vertices.
+The orientation changes or calculationg an offset are needed for the later processing when from bunch of tables the resulting polygons will be constructed.
 
 Next, I checked for triangle collinearity to eliminate cases with sliver triangles. If all checks pass, we create a polygon to hold points from the Subject 
 triangle, allowing for the insertion of additional points if needed. The overlap polygon is then calculated using the [Sutherland-Hodgman algorithm for 
@@ -247,7 +269,7 @@ The result of this fucntion you can see below:
 
 The initial implementation used double precision floating point, which has its advantages—fewer checks are needed, and results are more 
 accurate for very small triangles. However, because this function will be used in a game, speed is crucial. Comparing the worst cases 
-of both implementations, the single precision version is 1-1.5 times faster.
+of both implementations, the single precision version is 2-2.5 times faster.
 
 In benchmarks, the double-precision implementation consumes around 250,000 CPU cycles per frame in debug mode, while the single-precision 
 version uses about 100,000 cycles. Additionally, the double precision requires twice as much memory as the single precision.
