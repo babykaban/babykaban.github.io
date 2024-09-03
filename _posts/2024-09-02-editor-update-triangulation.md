@@ -58,7 +58,7 @@ I found that an additional step was necessary — removing triangles that fall o
 I considered two options: creating an algorithm to remove these triangles or splitting non-convex polygons into convex 
 parts. For some reason, I decided to pursue the second option.
 
-# How the Algorithm Works
+### How the Algorithm Works
 The algorithm first identifies reflex points, which are vertices that form angles greater than 180 degrees with their adjacent 
 edges. For each reflex point, it calculates a perpendicular line facing inside the polygon, which is used to find an edge where 
 this line intersects. The intersection point is then inserted into the polygon's vertex array, splitting the polygon into smaller pieces.
