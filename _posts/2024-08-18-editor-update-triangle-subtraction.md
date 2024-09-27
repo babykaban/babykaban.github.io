@@ -289,5 +289,7 @@ That’s it for this post. If you want to implement your own algorithm, the [doc
 I used is quite helpful—much of the code comes directly from there. Otherwise, you can check out my [repo](https://github.com/babykaban/Triangle-Boolean-Subtraction-Algorithm) 
 with the source code of the implementation described. 
 
+Привіт
+
 Take care,
 **[BabyKaban](https://github.com/babykaban)**
