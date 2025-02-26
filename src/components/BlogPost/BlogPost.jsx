@@ -23,10 +23,10 @@ class BlogPost extends React.Component {
             .then(response => response.text())
             .then(text => {
                 let updatedText = text;
-                post_images.forEach((image, index) => {
-                    const regex = new RegExp(`image_${index}\\.png`, 'g');
-                    updatedText = updatedText.replace(regex, image);
-                });
+//                post_images.forEach((image, index) => {
+//                    const regex = new RegExp(`image_${index}\\.png`, 'g');
+//                    updatedText = updatedText.replace(regex, image);
+//                });
                 this.setState({
                     markdown: marked(updatedText)
                 });
