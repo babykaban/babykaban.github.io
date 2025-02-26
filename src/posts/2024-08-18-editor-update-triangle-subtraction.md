@@ -7,17 +7,6 @@ obstacles was the main reason I developed this algorithm. The algorithm subtract
 removing the overlapping part from one of the triangles.
 
 Here is an example:
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/subtract_example_0.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/subtract_example_1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-<div class="caption">
-    On the left are triangles before the subtraction and on the right after.
-</div>
 
 To create an obstacle on a navigation mesh, we need to mark the walkable area as unwalkable, 
 which literally involves making a hole in the navigation polygon.
@@ -37,14 +26,6 @@ For those who just want to see or use the code without reading through the whole
 
 ## Implementation
 The image below will appear throughout the implementation steps to illustrate how it changes.
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/subtract_0.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-<div class="caption">
-    Blue triangle is `Subject` and red is `Subtractor`.
-</div>
 
 The first step is to check if two triangles overlap, excluding edges and vertices. For this, I used the [Separating Axis Theorem (SAT)](https://dyn4j.org/2010/01/sat/). 
 Then, I corrected the triangles' orientation. The `JE Wilson` suggests calculating an offset based on the polygons' orientation, but for simplicity, 
@@ -54,15 +35,6 @@ The orientation changes or calculationg an offset are needed for the later proce
 Next, I checked for triangle collinearity to eliminate cases with sliver triangles. If all checks pass, we create a polygon to hold points from the Subject 
 triangle, allowing for the insertion of additional points if needed. The overlap polygon is then calculated using the [Sutherland-Hodgman algorithm for 
 clipping](https://en.wikipedia.org/wiki/Sutherland%E2%80%93Hodgman_algorithm).
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/subtract_1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-<div class="caption">
-    Now the yellow polygon becomes the `Subtractor`.
-</div>
 
 Once the `Subtractor` is created, it should be cleaned up by removing duplicate points and merging those that are very close together. 
 We then check if the `Subtractor's` area is significant enough and if the difference between the `Subtractor's` area and the `Subject's` area is sufficient to proceed.
@@ -209,15 +181,6 @@ If points are found, they are inserted into the Subject in the places described 
 one for the Subject and one for the Subtractor. These tables contain information about each vertex of each polygon—whether the point is 
 outside, if it is a crossing point, which point it crosses, a processed flag, and the point itself.
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/subtract_2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-<div class="caption">
-    Updated image with inserted points and their coordinates.
-</div>
-
 As a result, we have two tables that look like this:
 
 *Subject Vertex Info*
@@ -248,14 +211,6 @@ polygons is similar to the one described in the documentation, with a few modifi
 steps in section 2.5 [here](https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-SA-97135.pdf).
 
 The result of this fucntion you can see below:
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/subtract_3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-<div class="caption">
-    Resulting polygons A and B.
-</div>
 
 ## Why Single Precision Floating Point?
 
