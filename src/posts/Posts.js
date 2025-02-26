@@ -1,4 +1,4 @@
-import editor_update_triangle_subtraction from '../posts/2024-08-18-editor-update-triangle-subtraction.md';
+// import editor_update_triangle_subtraction from '../posts/2024-08-18-editor-update-triangle-subtraction.md';
 import editor_update_map_mode from '../posts/2024-08-04-editor-update-map-mode.md';
 import editor_update_sswm_format from '../posts/2024-07-29-editor-update-sswm-format.md';
 
