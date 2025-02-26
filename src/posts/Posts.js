@@ -11,7 +11,7 @@ const Posts = [
         date: "August 18, 2024",
         description: "Editor update: Triangle Boolean Subtraction",
         image: editor_update_sswm_formatImg,
-        content: editor_update_triangle_subtraction,
+        content: editor_update_sswm_format,
         categories: ["Editor"],
         route: "/2024-08-18-editor-update-triangle-subtraction"
     },
