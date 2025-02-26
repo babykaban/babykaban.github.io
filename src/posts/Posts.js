@@ -6,7 +6,6 @@ import editor_update_sswm_format from '../posts/2024-07-29-editor-update-sswm-fo
 import editor_update_sswm_formatImg from '../assets/img/editor_picture_4.png';
 
 const Posts = [
-/*
     {
         title: "Triangle Boolean Subtraction",
         date: "August 18, 2024",
@@ -16,7 +15,6 @@ const Posts = [
         categories: ["Editor"],
         route: "/2024-08-18-editor-update-triangle-subtraction"
     },
-*/
     {
         title: "Expanding the World Map Editor Mode",
         date: "August 4, 2024",
