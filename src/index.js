@@ -6,7 +6,6 @@ import Home from "./pages/Home.jsx";
 import ProjectsPage from "./pages/Projects.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
-//import Test from "./pages/Test.jsx";
 
 import BlogPost from './components/BlogPost/BlogPost';
 
@@ -32,7 +31,6 @@ root.render(
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/contact" element={<Contact />} />
-            {/*<Route path="/test" element={<Test />} />*/}
            
             {Posts.map(post => (
                 <Route path={post.route} 
