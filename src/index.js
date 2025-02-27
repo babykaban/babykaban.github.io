@@ -19,6 +19,12 @@ import Projects from '../src/projects/Projects';
 
 import 'line-awesome/dist/line-awesome/css/line-awesome.min.css';
 
+import ReactGA from 'react-ga';
+
+// Initialize Google Analytics
+ReactGA.initialize('G-89DCRVDVVQ');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
