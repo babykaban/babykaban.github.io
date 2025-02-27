@@ -1,6 +1,6 @@
 {
   "homepage": "https://babykaban.github.io/blog",
-  "name": "test-blog",
+  "name": "blog",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
