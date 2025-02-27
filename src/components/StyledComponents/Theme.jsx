@@ -1,4 +1,4 @@
-export default {
+const theme = {
     body: {
         background: "#080808",
         text: "#999",
@@ -23,4 +23,6 @@ export default {
         fontLetterSpacing: "1px",
         headerWeight: "600"
     }
-}
+};
+
+export default theme;
