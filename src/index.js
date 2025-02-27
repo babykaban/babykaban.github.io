@@ -32,7 +32,7 @@ root.render(
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/contact" element={<Contact />} />
            
-            {/*Posts.map(post => (
+            {Posts.map(post => (
                 <Route path={post.route} 
                 element={
                 <BlogPost title={post.title}
@@ -40,7 +40,7 @@ root.render(
                           image={post.image}
                           content_images={post.content_images}
                           content={post.content} />} />
-            ))*/}
+            ))}
 
             {Projects.map(project => (
                 <Route path={project.route} 
