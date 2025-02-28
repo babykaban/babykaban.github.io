@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.762704c1.css",
-    "main.js": "/static/js/main.2398aa74.js",
+    "main.js": "/static/js/main.11f96408.js",
     "static/media/la-brands-400.svg": "/static/media/la-brands-400.928495fae14841a0d610.svg",
     "static/media/la-solid-900.svg": "/static/media/la-solid-900.a813034654b4ff0a0bac.svg",
     "static/media/editor_picture_4.png": "/static/media/editor_picture_4.e76f800965bb0a90f231.png",
@@ -21,16 +21,17 @@
     "static/media/test_img.png": "/static/media/test_img.53d670726ad89f6ee80b.png",
     "static/media/la-regular-400.woff": "/static/media/la-regular-400.aa859c0d08b8193d6586.woff",
     "static/media/la-regular-400.woff2": "/static/media/la-regular-400.8dc1cedf1f4987f82b72.woff2",
+    "static/media/2024-08-18-editor-update-triangle-subtraction.md": "/static/media/2024-08-18-editor-update-triangle-subtraction.d6a2a8fdfa26f23813c6.md",
     "static/media/2024-08-04-editor-update-map-mode.md": "/static/media/2024-08-04-editor-update-map-mode.5cdbc4b0a1c348d37bba.md",
     "static/media/ff.PNG": "/static/media/ff.a5266fdcc8aa965b05c4.PNG",
     "static/media/2024-07-29-editor-update-sswm-format.md": "/static/media/2024-07-29-editor-update-sswm-format.3f3a08f81065d880edaa.md",
     "index.html": "/index.html",
     "static/media/sample.md": "/static/media/sample.31d6cfe0d16ae931b73c.md",
     "main.762704c1.css.map": "/static/css/main.762704c1.css.map",
-    "main.2398aa74.js.map": "/static/js/main.2398aa74.js.map"
+    "main.11f96408.js.map": "/static/js/main.11f96408.js.map"
   },
   "entrypoints": [
     "static/css/main.762704c1.css",
-    "static/js/main.2398aa74.js"
+    "static/js/main.11f96408.js"
   ]
 }
