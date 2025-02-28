@@ -1,11 +1,3 @@
----
-layout: post
-title: Advancing Navigation Meshes and Triangulation
-date: 2024-09-02
-description: Editor update
-categories: blog
----
-
 ## Introduction
 Over the past few weeks, I’ve been focused on continuing my work with navigation meshes. After implementing features
 in the editor to create polygons, the next major step was triangulating those polygons. This is important to placing
@@ -241,6 +233,9 @@ SplitPolygonIntoConvexParts(polygon2 *Polygons, s32 *Count, s32 *NotConvexIndice
 
 For those interested in implementation here is the full code:
 
+<details>
+<summary>Show Code</summary>
+
 ```c++
 struct line
 {
@@ -424,6 +419,8 @@ SplitPolygonIntoConvexParts(polygon2 *Polygons, s32 *Count, s32 *NotConvexIndice
     }
 }
 ```
+
+</details>
 
 ## Moving Forward
 While splitting concave polygons into convex parts was a useful solution to the problem, I still believe that developing an algorithm 

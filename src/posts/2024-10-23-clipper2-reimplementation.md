@@ -1,11 +1,3 @@
----
-layout: post
-title: The Road to Rewriting Clipper2
-date: 2024-10-23
-description: Clipper-2d
-categories: blog
----
-
 While developing the navigation meshes for my game, I ran into a persistent issue: **clipping polygons**. I initially implemented a polygon subtraction algorithm that worked well for most cases, but it quickly became apparent that there might be a **better approach** to polygon clipping.
 
 ## Inspiration from Godot Engine
