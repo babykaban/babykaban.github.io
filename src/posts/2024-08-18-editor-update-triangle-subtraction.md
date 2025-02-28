@@ -33,8 +33,7 @@ I made the algorithm work only on clockwise triangles. If necessary, the triangl
 The orientation changes or calculationg an offset are needed for the later processing when from bunch of tables the resulting polygons will be constructed.
 
 Next, I checked for triangle collinearity to eliminate cases with sliver triangles. If all checks pass, we create a polygon to hold points from the Subject 
-triangle, allowing for the insertion of additional points if needed. The overlap polygon is then calculated using the [Sutherland-Hodgman algorithm for 
-clipping](https://en.wikipedia.org/wiki/Sutherland%E2%80%93Hodgman_algorithm).
+triangle, allowing for the insertion of additional points if needed. The overlap polygon is then calculated using the [Sutherland-Hodgman algorithm for clipping](https://en.wikipedia.org/wiki/Sutherland%E2%80%93Hodgman_algorithm).
 
 Once the `Subtractor` is created, it should be cleaned up by removing duplicate points and merging those that are very close together. 
 We then check if the `Subtractor's` area is significant enough and if the difference between the `Subtractor's` area and the `Subject's` area is sufficient to proceed.
