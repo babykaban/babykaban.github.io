@@ -1,4 +1,3 @@
-
 ## Introduction
 In game development, navigation meshes are useful for defining walkable areas where AI characters can move. 
 These meshes are made up of interconnected polygons that represent navigable surfaces, allowing for 
@@ -7,6 +6,14 @@ obstacles was the main reason I developed this algorithm. The algorithm subtract
 removing the overlapping part from one of the triangles.
 
 Here is an example:
+
+<div class="flex-space-between">
+    <img src="image_0.png" alt="Image 1" style="width: 49%;" class="zoomable" />
+    <img src="image_1.png" alt="Image 2" style="width: 49%;" class="zoomable" />
+</div>
+<div class="caption">
+    On the left are triangles before the subtraction and on the right after.
+</div>
 
 To create an obstacle on a navigation mesh, we need to mark the walkable area as unwalkable, 
 which literally involves making a hole in the navigation polygon.
@@ -24,8 +31,14 @@ From here, I began developing the algorithm based on `JE Wilson's` guidelines.
 
 For those who just want to see or use the code without reading through the whole explanation, here's the [GitHub link](https://github.com/babykaban/Triangle-Boolean-Subtraction-Algorithm).
 
-## Implementation
+
 The image below will appear throughout the implementation steps to illustrate how it changes.
+<div class="flex-space-between">
+    <img src="image_2.png" alt="Image 2" style="width: 98%;" class="zoomable" />
+</div>
+<div class="caption">
+    Blue triangle is `Subject` and red is `Subtractor`.
+</div>
 
 The first step is to check if two triangles overlap, excluding edges and vertices. For this, I used the [Separating Axis Theorem (SAT)](https://dyn4j.org/2010/01/sat/). 
 Then, I corrected the triangles' orientation. The `JE Wilson` suggests calculating an offset based on the polygons' orientation, but for simplicity, 
@@ -34,6 +47,13 @@ The orientation changes or calculationg an offset are needed for the later proce
 
 Next, I checked for triangle collinearity to eliminate cases with sliver triangles. If all checks pass, we create a polygon to hold points from the Subject 
 triangle, allowing for the insertion of additional points if needed. The overlap polygon is then calculated using the [Sutherland-Hodgman algorithm for clipping](https://en.wikipedia.org/wiki/Sutherland%E2%80%93Hodgman_algorithm).
+
+<div class="flex-space-between">
+    <img src="image_3.png" alt="Image 2" style="width: 98%;" class="zoomable" />
+</div>
+<div class="caption">
+    Now the yellow polygon becomes the `Subtractor`.
+</div>
 
 Once the `Subtractor` is created, it should be cleaned up by removing duplicate points and merging those that are very close together. 
 We then check if the `Subtractor's` area is significant enough and if the difference between the `Subtractor's` area and the `Subject's` area is sufficient to proceed.
@@ -47,6 +67,9 @@ We then determine which points of the `Subtractor` are on the `Subject's` edges 
 detailing how many points are on each `Subject` edge. If no intersection points are found, we record the `Subtractor` as a hole in the `Subject` and exit the function.
 
 Here are two function that perform operation above
+<details>
+<summary>Show Code</summary>
+
 ```c++
 internal points_between *
 GetIntersectionPointsF32(polygon2 *A, polygon2 *B, v2 *OutputPoints, s32 *OutputCount, memory_arena *Arena)
@@ -168,6 +191,9 @@ IntersectLineSegmentF32(polygon2 *A, v2 p1, v2 p2, v2 *Points, s32 *PointCount, 
     return(Intersect);
 }
 ```
+
+</details>
+
 For the example illustrated above, the table will look like this:
 
 | Edge Start Index | Edge End Index | Point Count |
@@ -179,6 +205,13 @@ For the example illustrated above, the table will look like this:
 If points are found, they are inserted into the Subject in the places described by the resulting table. We then need to build more tables, 
 one for the Subject and one for the Subtractor. These tables contain information about each vertex of each polygon—whether the point is 
 outside, if it is a crossing point, which point it crosses, a processed flag, and the point itself.
+
+<div class="flex-space-between">
+    <img src="image_4.png" alt="Image 4" style="width: 98%;" class="zoomable" />
+</div>
+<div class="caption">
+    Updated image with inserted points and their coordinates.
+</div>
 
 As a result, we have two tables that look like this:
 
@@ -210,6 +243,12 @@ polygons is similar to the one described in the documentation, with a few modifi
 steps in section 2.5 [here](https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-SA-97135.pdf).
 
 The result of this fucntion you can see below:
+<div class="flex-space-between">
+    <img src="image_5.png" alt="Image 5" style="width: 98%;" class="zoomable" />
+</div>
+<div class="caption">
+    Resulting polygons A and B.
+</div>
 
 ## Why Single Precision Floating Point?
 
