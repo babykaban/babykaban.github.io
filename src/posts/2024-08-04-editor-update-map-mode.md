@@ -1,8 +1,8 @@
 Hello, everyone!
 
 I’m back with another update on the development of **Spellweaver Saga: Retrieving The Legendary Relic**. Over the past week, 
-I’ve been focusing on enhancing the editor, particularly in creating and managing world maps. Let’s dive into new features 
-that have been added!
+I’ve been focusing on enhancing the editor, particularly in creating and managing world maps. Let’s look at new features 
+that have been added.
 
 ## Creating and Loading World Maps
 

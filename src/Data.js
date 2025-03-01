@@ -1,3 +1,5 @@
+
+
 const About = {
     about: {
         title: "I live somewhere between programming and engineering.",
@@ -35,6 +37,11 @@ const About = {
     projects: {
         title: "This page is a list of all projects that I have worked or am working on.",
         description: "All projects have their related articles and links to blog posts. In each project, I explain why I decided to do it what is the goal of the project and on what stage it is now.",
+    },
+
+    spellweaver_saga: {
+        title: "Spellweaver Saga",
+        description: "Spellweaver Saga is a roguelike adventure where players explore islands created after a cataclysm, seeking to restore the world. Using a deep spell crafting system, everything from combat to puzzles revolves around elemental magic.",
     },
 
     social: {

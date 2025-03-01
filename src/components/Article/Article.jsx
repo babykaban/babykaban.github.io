@@ -1,16 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 import {
     Image,
     Container,
     CaseLink,
     CaseStudyContainer,
-    CaseStudyContent,
-    CaseStudyImage
+    CaseStudyContent
 } from '../StyledComponents/StyledComponents';
 import { ClientText } from "./Style";
 import Button from '../Utility/Button';
 import { Fade } from 'react-awesome-reveal';
+
+const CaseStudyImage = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+`;
 
 const Project = (props) => {
     return (

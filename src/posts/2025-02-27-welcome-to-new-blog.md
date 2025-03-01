@@ -12,7 +12,7 @@ Hey there! I'm excited to finally launch my personal website, a place where I ca
 
 Currently, I'm working on a **reimplementation of the Clipper2 Library** and a **Golf Balls Counter/Sorter/Grader**, both of which have been keeping me busy. Additionally, I'm developing a game called *Spellweaver Saga: Retrieving The Legendary Relic*. While there's been extensive brainstorming on the game design, a formal Game Design Document (GDD) is not yet available. However, Clipper2 will play a significant role in the game's engine, which is being written from scratch following Handmade Hero guidelines. This game focuses on combining magic elements to cast spells, solve puzzles, and complete quests.
 
-I've also shared some insights on why I'm creating the Golf Balls machine on the **About Me** page. More detailed information will be available on the **Projects** page. Although the **Projects** page isn't ready yet, updates will be coming soon! This has been a bit of a time-consuming process, as it's my first time working with React and JavaScript, but I'm making steady progress.
+I've also shared some insights on why I'm creating the Golf Balls machine on the **About** page. More detailed information will be available on the **Projects** page. Although the **Projects** page isn't ready yet, updates will be coming soon! This has been a bit of a time-consuming process, as it's my first time working with React and JavaScript, but I'm making steady progress.
 
 ### Future Plans & Tech Stack
 

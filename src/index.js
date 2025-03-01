@@ -50,11 +50,7 @@ root.render(
 
             {Projects.map(project => (
                 <Route path={project.route} 
-                element={
-                <BlogPost title={project.title}
-                          date={project.date}
-                          image={project.image}
-                          content={project.content} />} />
+                element={project.page} />
             ))}
 
           </Routes>
