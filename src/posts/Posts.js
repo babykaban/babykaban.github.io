@@ -1,3 +1,4 @@
+import sudden_decision_about_clipper from '../posts/2025-03-01-sudden-decision-about-clipper.md';
 import welcome_to_new_blog from '../posts/2025-02-27-welcome-to-new-blog.md';
 import clipper2_reimplementation from '../posts/2024-10-23-clipper2-reimplementation.md';
 import editor_update_triangulation from '../posts/2024-09-02-editor-update-triangulation.md';
@@ -5,6 +6,7 @@ import editor_update_triangle_subtraction from '../posts/2024-08-18-editor-updat
 import editor_update_map_mode from '../posts/2024-08-04-editor-update-map-mode.md';
 import editor_update_sswm_format from '../posts/2024-07-29-editor-update-sswm-format.md';
 
+import sudden_decision_about_clipperImg from '../assets/img/clipper_logg.png';
 import welcome_to_new_blogImg from '../assets/img/welcome_0.png';
 import clipper2_reimplementationImg from '../assets/img/clipper2_0.png';
 import editor_update_triangulationImg from '../assets/img/triangulation.png';
@@ -13,6 +15,16 @@ import editor_update_map_modeImg from '../assets/img/editor_picture_1.png';
 import editor_update_sswm_formatImg from '../assets/img/editor_picture_4.png';
 
 const Posts = [
+    {
+        title: "Sudden Decision about Clipper",
+        date: "March 1, 2025",
+        description: "",
+        image: sudden_decision_about_clipperImg,
+        content: sudden_decision_about_clipper,
+        categories: ["Clipper2", "Editor"],
+        route: "/2025-03-01-sudden-decision-about-clipper"
+    },
+
     {
         title: "Welcome to New Blog",
         date: "February 27, 2025",
