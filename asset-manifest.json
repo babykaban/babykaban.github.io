@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.833b939d.css",
-    "main.js": "/static/js/main.2f24b658.js",
+    "main.js": "/static/js/main.61c51c19.js",
     "static/media/project_img0.png": "/static/media/project_img0.3b46450f0743c20bc2fe.png",
     "static/media/project_img5.jpg": "/static/media/project_img5.c76ba8391956d0902c57.jpg",
     "static/media/project_img1.jpg": "/static/media/project_img1.21ca54924ca2630b1dc8.jpg",
@@ -50,11 +50,12 @@
     "static/media/spellweaver_saga.md": "/static/media/spellweaver_saga.00b3378536b3133c7cd7.md",
     "static/media/clipper_library.md": "/static/media/clipper_library.0d65c0eb497417515374.md",
     "index.html": "/index.html",
+    "static/media/2025-03-01-sudden-decision-about-clipper.md": "/static/media/2025-03-01-sudden-decision-about-clipper.84e8246d91bf2e8f920a.md",
     "main.833b939d.css.map": "/static/css/main.833b939d.css.map",
-    "main.2f24b658.js.map": "/static/js/main.2f24b658.js.map"
+    "main.61c51c19.js.map": "/static/js/main.61c51c19.js.map"
   },
   "entrypoints": [
     "static/css/main.833b939d.css",
-    "static/js/main.2f24b658.js"
+    "static/js/main.61c51c19.js"
   ]
 }
