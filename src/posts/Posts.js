@@ -1,3 +1,4 @@
+import refactoring_kaban_engine from '../posts/2025-03-09-refactoring-kaban-engine.md';
 import sudden_decision_about_clipper from '../posts/2025-03-01-sudden-decision-about-clipper.md';
 import welcome_to_new_blog from '../posts/2025-02-27-welcome-to-new-blog.md';
 import clipper2_reimplementation from '../posts/2024-10-23-clipper2-reimplementation.md';
@@ -6,6 +7,7 @@ import editor_update_triangle_subtraction from '../posts/2024-08-18-editor-updat
 import editor_update_map_mode from '../posts/2024-08-04-editor-update-map-mode.md';
 import editor_update_sswm_format from '../posts/2024-07-29-editor-update-sswm-format.md';
 
+import refactoring_kaban_engineImg from '../assets/img/refactoring_kaban_engine.png';
 import sudden_decision_about_clipperImg from '../assets/img/clipper_logg.png';
 import welcome_to_new_blogImg from '../assets/img/welcome_0.png';
 import clipper2_reimplementationImg from '../assets/img/clipper2_0.png';
@@ -15,6 +17,16 @@ import editor_update_map_modeImg from '../assets/img/editor_picture_1.png';
 import editor_update_sswm_formatImg from '../assets/img/editor_picture_4.png';
 
 const Posts = [
+    {
+        title: "Refactoring Kaban Engine: Debug Systems, UI, and Rendering",
+        date: "March 9, 2025",
+        description: "Since I finished working on the Clipper library, I decided it was time to refactor my game engine. The last time I touched it was almost six months ago, and when I opened the source code, my first instinct was to throw everything in the garbage and start over.",
+        image: refactoring_kaban_engineImg,
+        content: refactoring_kaban_engine,
+        categories: ["Editor", "Engine"],
+        route: "/2025-03-09-refactoring-kaban-engine"
+    },
+
     {
         title: "Sudden Decision about Clipper",
         date: "March 1, 2025",
