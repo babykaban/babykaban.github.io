@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.833b939d.css",
-    "main.js": "/static/js/main.61c51c19.js",
+    "main.js": "/static/js/main.c47293e1.js",
+    "static/media/refactoring_kaban_engine.png": "/static/media/refactoring_kaban_engine.d20c07d5c23421bb1340.png",
     "static/media/project_img0.png": "/static/media/project_img0.3b46450f0743c20bc2fe.png",
     "static/media/project_img5.jpg": "/static/media/project_img5.c76ba8391956d0902c57.jpg",
     "static/media/project_img1.jpg": "/static/media/project_img1.21ca54924ca2630b1dc8.jpg",
@@ -34,7 +35,6 @@
     "static/media/la-solid-900.woff2": "/static/media/la-solid-900.3efd5ba15a279377d224.woff2",
     "static/media/la-brands-400.woff2": "/static/media/la-brands-400.3a8109c4ac75662f8355.woff2",
     "static/media/clipper_logg.png": "/static/media/clipper_logg.deb20a6efdd733abecaa.png",
-    "static/media/post_1.png": "/static/media/post_1.fc50aa1c80e1b2f263cb.png",
     "static/media/welcome_0.png": "/static/media/welcome_0.99faf0c67f7888b78fca.png",
     "static/media/la-regular-400.eot": "/static/media/la-regular-400.77111476f05dd3443047.eot",
     "static/media/la-regular-400.ttf": "/static/media/la-regular-400.cf246e21218cab398b3d.ttf",
@@ -45,6 +45,7 @@
     "static/media/2024-08-04-editor-update-map-mode.md": "/static/media/2024-08-04-editor-update-map-mode.3955c22bca375a2edcea.md",
     "static/media/ff.PNG": "/static/media/ff.a5266fdcc8aa965b05c4.PNG",
     "static/media/2024-10-23-clipper2-reimplementation.md": "/static/media/2024-10-23-clipper2-reimplementation.e88f89536d73e9cc6a94.md",
+    "static/media/2025-03-09-refactoring-kaban-engine.md": "/static/media/2025-03-09-refactoring-kaban-engine.f852e4a2efd97c97cd92.md",
     "static/media/2025-02-27-welcome-to-new-blog.md": "/static/media/2025-02-27-welcome-to-new-blog.be8bde9ff9f94b662d62.md",
     "static/media/2024-07-29-editor-update-sswm-format.md": "/static/media/2024-07-29-editor-update-sswm-format.3f3a08f81065d880edaa.md",
     "static/media/spellweaver_saga.md": "/static/media/spellweaver_saga.00b3378536b3133c7cd7.md",
@@ -52,10 +53,10 @@
     "index.html": "/index.html",
     "static/media/2025-03-01-sudden-decision-about-clipper.md": "/static/media/2025-03-01-sudden-decision-about-clipper.84e8246d91bf2e8f920a.md",
     "main.833b939d.css.map": "/static/css/main.833b939d.css.map",
-    "main.61c51c19.js.map": "/static/js/main.61c51c19.js.map"
+    "main.c47293e1.js.map": "/static/js/main.c47293e1.js.map"
   },
   "entrypoints": [
     "static/css/main.833b939d.css",
-    "static/js/main.61c51c19.js"
+    "static/js/main.c47293e1.js"
   ]
 }
