@@ -1,3 +1,4 @@
+import refactoring_kaban_engine2 from '../posts/2025-03-18-refactoring-kaban-engine2.md';
 import refactoring_kaban_engine from '../posts/2025-03-09-refactoring-kaban-engine.md';
 import sudden_decision_about_clipper from '../posts/2025-03-01-sudden-decision-about-clipper.md';
 import welcome_to_new_blog from '../posts/2025-02-27-welcome-to-new-blog.md';
@@ -7,6 +8,7 @@ import editor_update_triangle_subtraction from '../posts/2024-08-18-editor-updat
 import editor_update_map_mode from '../posts/2024-08-04-editor-update-map-mode.md';
 import editor_update_sswm_format from '../posts/2024-07-29-editor-update-sswm-format.md';
 
+import refactoring_kaban_engine2Img from '../assets/img/refactoring_kaban_engine2.png';
 import refactoring_kaban_engineImg from '../assets/img/refactoring_kaban_engine.png';
 import sudden_decision_about_clipperImg from '../assets/img/clipper_logg.png';
 import welcome_to_new_blogImg from '../assets/img/welcome_0.png';
@@ -17,6 +19,16 @@ import editor_update_map_modeImg from '../assets/img/editor_picture_1.png';
 import editor_update_sswm_formatImg from '../assets/img/editor_picture_4.png';
 
 const Posts = [
+    {
+        title: "Refactoring Kaban Engine: Wrestling with Libraries",
+        date: "March 18, 2025",
+        description: "It’s been about a week since my last post, and I’ve been neck-deep in figuring out GLFW, GLEW, and Nuklear for the Kaban Engine refactor.",
+        image: refactoring_kaban_engine2Img,
+        content: refactoring_kaban_engine2,
+        categories: ["Editor", "Engine"],
+        route: "/2025-03-18-refactoring-kaban-engine-2"
+    },
+
     {
         title: "Refactoring Kaban Engine: Debug Systems, UI, and Rendering",
         date: "March 9, 2025",
