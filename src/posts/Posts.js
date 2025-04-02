@@ -1,3 +1,4 @@
+import refactoring_kaban_engine3 from '../posts/2025-04-01-refactoring-kaban-engine3.md';
 import refactoring_kaban_engine2 from '../posts/2025-03-18-refactoring-kaban-engine2.md';
 import refactoring_kaban_engine from '../posts/2025-03-09-refactoring-kaban-engine.md';
 import sudden_decision_about_clipper from '../posts/2025-03-01-sudden-decision-about-clipper.md';
@@ -8,6 +9,7 @@ import editor_update_triangle_subtraction from '../posts/2024-08-18-editor-updat
 import editor_update_map_mode from '../posts/2024-08-04-editor-update-map-mode.md';
 import editor_update_sswm_format from '../posts/2024-07-29-editor-update-sswm-format.md';
 
+import refactoring_kaban_engine3Img from '../assets/img/refactoring_kaban_engine3.png';
 import refactoring_kaban_engine2Img from '../assets/img/refactoring_kaban_engine2.png';
 import refactoring_kaban_engineImg from '../assets/img/refactoring_kaban_engine.png';
 import sudden_decision_about_clipperImg from '../assets/img/clipper_logg.png';
@@ -19,6 +21,21 @@ import editor_update_map_modeImg from '../assets/img/editor_picture_1.png';
 import editor_update_sswm_formatImg from '../assets/img/editor_picture_4.png';
 
 const Posts = [
+    {
+        title: "Refactoring Kaban Engine: UI",
+        date: "April 1, 2025",
+        description: " It’s been a little while since my last update on the Kaban Engine refactor, and I’ve been ...",
+        image: refactoring_kaban_engine3Img,
+        content_images: [
+            "refactoring_kaban_engine3_5.png", "refactoring_kaban_engine3_4.png",
+            "refactoring_kaban_engine3_0.png", "refactoring_kaban_engine3_1.png",
+            "refactoring_kaban_engine3_2.png", "refactoring_kaban_engine3_3.png",
+        ],
+        content: refactoring_kaban_engine3,
+        categories: ["Editor", "Engine"],
+        route: "/2025-03-18-refactoring-kaban-engine-3"
+    },
+
     {
         title: "Refactoring Kaban Engine: Wrestling with Libraries",
         date: "March 18, 2025",
