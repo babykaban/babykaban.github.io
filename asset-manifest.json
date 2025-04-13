@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.833b939d.css",
-    "main.js": "/static/js/main.d78bf949.js",
+    "main.js": "/static/js/main.930275fb.js",
     "static/media/refactoring_kaban_engine.png": "/static/media/refactoring_kaban_engine.d20c07d5c23421bb1340.png",
     "static/media/project_img0.png": "/static/media/project_img0.3b46450f0743c20bc2fe.png",
     "static/media/project_img5.jpg": "/static/media/project_img5.c76ba8391956d0902c57.jpg",
@@ -12,6 +12,7 @@
     "static/media/project_img3.jpg": "/static/media/project_img3.b3d8c54e2df370a2962e.jpg",
     "static/media/project_img4.jpg": "/static/media/project_img4.e69a987727dc7525ba16.jpg",
     "static/media/triangulation.png": "/static/media/triangulation.7e97bf87c5c13720afa1.png",
+    "static/media/engine_asset_editing.png": "/static/media/engine_asset_editing.542947e15752a493d492.png",
     "static/media/editor_picture_4.png": "/static/media/editor_picture_4.65ff54409e5fe006d949.png",
     "static/media/refactoring_kaban_engine3_3.png": "/static/media/refactoring_kaban_engine3_3.f62182f5c63b6be67dd6.png",
     "static/media/editor_picture_5.png": "/static/media/editor_picture_5.84fbdd70a08beeb3ec34.png",
@@ -53,6 +54,7 @@
     "static/media/2024-08-04-editor-update-map-mode.md": "/static/media/2024-08-04-editor-update-map-mode.3955c22bca375a2edcea.md",
     "static/media/2025-04-01-refactoring-kaban-engine3.md": "/static/media/2025-04-01-refactoring-kaban-engine3.a734270fdb2ac72e9cbc.md",
     "static/media/ff.PNG": "/static/media/ff.a5266fdcc8aa965b05c4.PNG",
+    "static/media/2025-04-12-engine-asset-editing.md": "/static/media/2025-04-12-engine-asset-editing.c478e95b8b4b416bf27b.md",
     "static/media/2024-10-23-clipper2-reimplementation.md": "/static/media/2024-10-23-clipper2-reimplementation.e88f89536d73e9cc6a94.md",
     "static/media/2025-03-09-refactoring-kaban-engine.md": "/static/media/2025-03-09-refactoring-kaban-engine.f852e4a2efd97c97cd92.md",
     "static/media/2025-03-18-refactoring-kaban-engine2.md": "/static/media/2025-03-18-refactoring-kaban-engine2.51971611ce4f5537497d.md",
@@ -63,10 +65,10 @@
     "index.html": "/index.html",
     "static/media/2025-03-01-sudden-decision-about-clipper.md": "/static/media/2025-03-01-sudden-decision-about-clipper.84e8246d91bf2e8f920a.md",
     "main.833b939d.css.map": "/static/css/main.833b939d.css.map",
-    "main.d78bf949.js.map": "/static/js/main.d78bf949.js.map"
+    "main.930275fb.js.map": "/static/js/main.930275fb.js.map"
   },
   "entrypoints": [
     "static/css/main.833b939d.css",
-    "static/js/main.d78bf949.js"
+    "static/js/main.930275fb.js"
   ]
 }
