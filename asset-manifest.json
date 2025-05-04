@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.833b939d.css",
-    "main.js": "/static/js/main.930275fb.js",
+    "main.js": "/static/js/main.99663031.js",
     "static/media/refactoring_kaban_engine.png": "/static/media/refactoring_kaban_engine.d20c07d5c23421bb1340.png",
     "static/media/project_img0.png": "/static/media/project_img0.3b46450f0743c20bc2fe.png",
     "static/media/project_img5.jpg": "/static/media/project_img5.c76ba8391956d0902c57.jpg",
@@ -32,26 +32,37 @@
     "static/media/editor_picture_2.png": "/static/media/editor_picture_2.1de0866fd4ee0ee1cb1e.png",
     "static/media/la-brands-400.eot": "/static/media/la-brands-400.908ce19d18187969b32f.eot",
     "static/media/la-brands-400.ttf": "/static/media/la-brands-400.6ecea4826b87fafb97be.ttf",
+    "static/media/engine_asset_editing_spe.png": "/static/media/engine_asset_editing_spe.a91c3668de00b0250889.png",
+    "static/media/edit_mode_spe_9.png": "/static/media/edit_mode_spe_9.4372453e71306c401c86.png",
     "static/media/subtract_example_1.png": "/static/media/subtract_example_1.e9b40d44ddd88559fbb7.png",
     "static/media/refactoring_kaban_engine3_5.png": "/static/media/refactoring_kaban_engine3_5.a017c69d88d243b272be.png",
+    "static/media/edit_mode_spe_7.png": "/static/media/edit_mode_spe_7.f8147e9c4cbc5992515a.png",
     "static/media/la-solid-900.woff": "/static/media/la-solid-900.893634871a6cbff72157.woff",
     "static/media/la-regular-400.svg": "/static/media/la-regular-400.86128b71644abd479cfb.svg",
+    "static/media/edit_mode_spe_8.png": "/static/media/edit_mode_spe_8.ae47313bc7bcb90657cf.png",
     "static/media/refactoring_kaban_engine3_1.png": "/static/media/refactoring_kaban_engine3_1.096671304480e37997f7.png",
     "static/media/la-brands-400.woff": "/static/media/la-brands-400.925b340f49e65e8bab10.woff",
     "static/media/la-solid-900.woff2": "/static/media/la-solid-900.3efd5ba15a279377d224.woff2",
+    "static/media/edit_mode_spe_6.png": "/static/media/edit_mode_spe_6.c32b3261c2b20c09b542.png",
+    "static/media/edit_mode_spe_5.png": "/static/media/edit_mode_spe_5.180868274ec6b071e36d.png",
     "static/media/refactoring_kaban_engine2.png": "/static/media/refactoring_kaban_engine2.cd6eefb36c9a22ccd0dd.png",
     "static/media/la-brands-400.woff2": "/static/media/la-brands-400.3a8109c4ac75662f8355.woff2",
     "static/media/refactoring_kaban_engine3_4.png": "/static/media/refactoring_kaban_engine3_4.6f6048c490deac469be8.png",
+    "static/media/edit_mode_spe_3.png": "/static/media/edit_mode_spe_3.d7d40b9cdf7d35b01d92.png",
+    "static/media/edit_mode_spe_4.png": "/static/media/edit_mode_spe_4.974bea494255e68d81b7.png",
     "static/media/refactoring_kaban_engine3_0.png": "/static/media/refactoring_kaban_engine3_0.2133ac264dc0008a889b.png",
     "static/media/clipper_logg.png": "/static/media/clipper_logg.deb20a6efdd733abecaa.png",
+    "static/media/edit_mode_spe_2.png": "/static/media/edit_mode_spe_2.5596d747f5c6fc0a9167.png",
     "static/media/welcome_0.png": "/static/media/welcome_0.99faf0c67f7888b78fca.png",
     "static/media/la-regular-400.eot": "/static/media/la-regular-400.77111476f05dd3443047.eot",
     "static/media/la-regular-400.ttf": "/static/media/la-regular-400.cf246e21218cab398b3d.ttf",
+    "static/media/edit_mode_spe_0.png": "/static/media/edit_mode_spe_0.ae7dc38c8b26f3b245ab.png",
     "static/media/2024-09-02-editor-update-triangulation.md": "/static/media/2024-09-02-editor-update-triangulation.34abf7b0df5376ac14f6.md",
     "static/media/la-regular-400.woff": "/static/media/la-regular-400.aa859c0d08b8193d6586.woff",
     "static/media/2024-08-18-editor-update-triangle-subtraction.md": "/static/media/2024-08-18-editor-update-triangle-subtraction.50819180fc8777aaf7c8.md",
     "static/media/la-regular-400.woff2": "/static/media/la-regular-400.8dc1cedf1f4987f82b72.woff2",
     "static/media/2024-08-04-editor-update-map-mode.md": "/static/media/2024-08-04-editor-update-map-mode.3955c22bca375a2edcea.md",
+    "static/media/2025-05-04-engine-asset-editing-specif.md": "/static/media/2025-05-04-engine-asset-editing-specif.ec98c559eb418765b70b.md",
     "static/media/2025-04-01-refactoring-kaban-engine3.md": "/static/media/2025-04-01-refactoring-kaban-engine3.a734270fdb2ac72e9cbc.md",
     "static/media/ff.PNG": "/static/media/ff.a5266fdcc8aa965b05c4.PNG",
     "static/media/2025-04-12-engine-asset-editing.md": "/static/media/2025-04-12-engine-asset-editing.c478e95b8b4b416bf27b.md",
@@ -65,10 +76,10 @@
     "index.html": "/index.html",
     "static/media/2025-03-01-sudden-decision-about-clipper.md": "/static/media/2025-03-01-sudden-decision-about-clipper.84e8246d91bf2e8f920a.md",
     "main.833b939d.css.map": "/static/css/main.833b939d.css.map",
-    "main.930275fb.js.map": "/static/js/main.930275fb.js.map"
+    "main.99663031.js.map": "/static/js/main.99663031.js.map"
   },
   "entrypoints": [
     "static/css/main.833b939d.css",
-    "static/js/main.930275fb.js"
+    "static/js/main.99663031.js"
   ]
 }
