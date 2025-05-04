@@ -1,3 +1,4 @@
+import engine_asset_editing_spe from '../posts/2025-05-04-engine-asset-editing-specif.md';
 import engine_asset_editing from '../posts/2025-04-12-engine-asset-editing.md';
 import refactoring_kaban_engine3 from '../posts/2025-04-01-refactoring-kaban-engine3.md';
 import refactoring_kaban_engine2 from '../posts/2025-03-18-refactoring-kaban-engine2.md';
@@ -10,6 +11,7 @@ import editor_update_triangle_subtraction from '../posts/2024-08-18-editor-updat
 import editor_update_map_mode from '../posts/2024-08-04-editor-update-map-mode.md';
 import editor_update_sswm_format from '../posts/2024-07-29-editor-update-sswm-format.md';
 
+import engine_asset_editing_speImg from '../assets/img/engine_asset_editing_spe.png';
 import engine_asset_editingImg from '../assets/img/engine_asset_editing.png';
 import refactoring_kaban_engine3Img from '../assets/img/refactoring_kaban_engine3.png';
 import refactoring_kaban_engine2Img from '../assets/img/refactoring_kaban_engine2.png';
@@ -24,13 +26,30 @@ import editor_update_sswm_formatImg from '../assets/img/editor_picture_4.png';
 
 const Posts = [
     {
+        title: "Asset Editing System",
+        date: "May 4, 2025",
+        description: "In my last post, I talked about how my game engine loads assets from an asset file. To make it easy to ...",
+        image: engine_asset_editing_speImg,
+        content_images: [
+            "edit_mode_spe_0.png", "edit_mode_spe_1.png",
+            "edit_mode_spe_2.png", "edit_mode_spe_3.png",
+            "edit_mode_spe_4.png", "edit_mode_spe_5.png",
+            "edit_mode_spe_6.png", "edit_mode_spe_7.png",
+            "edit_mode_spe_8.png", "edit_mode_spe_9.png",
+        ],
+        content: engine_asset_editing_spe,
+        categories: ["Editor", "Engine"],
+        route: "/2025-05-04-engine-asset-editing-specif"
+    },
+
+    {
         title: "Assets Edit Mode",
         date: "April 12, 2025",
         description: "After completing my initial demo for my school capstone project, I set out to transform my work into a proper game engine, prioritizing ease of use and flexibility.",
         image: engine_asset_editingImg,
         content: engine_asset_editing,
         categories: ["Editor", "Engine"],
-        route: "/2025-04-18-engine-asset-editing"
+        route: "/2025-04-12-engine-asset-editing"
     },
 
     {
