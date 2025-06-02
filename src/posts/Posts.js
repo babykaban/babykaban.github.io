@@ -12,7 +12,7 @@ import editor_update_triangle_subtraction from '../posts/2024-08-18-editor-updat
 import editor_update_map_mode from '../posts/2024-08-04-editor-update-map-mode.md';
 import editor_update_sswm_format from '../posts/2024-07-29-editor-update-sswm-format.md';
 
-//import engine_map_editor_navmeshImg from '../assets/img/engine_map_editor_navmesh.png';
+import engine_map_editor_navmeshImg from '../assets/img/engine_map_editor_navmesh.png';
 import engine_asset_editing_speImg from '../assets/img/engine_asset_editing_spe.png';
 import engine_asset_editingImg from '../assets/img/engine_asset_editing.png';
 import refactoring_kaban_engine3Img from '../assets/img/refactoring_kaban_engine3.png';
@@ -28,17 +28,10 @@ import editor_update_sswm_formatImg from '../assets/img/editor_picture_4.png';
 
 const Posts = [
     {
-        title: "Progress on Map Editing Mode: Navigation Meshes",
-        date: "May 19, 2025",
-        description: "As I mentioned in my previous post, this entry is about my recent work on the map editing mode. I’ve been focusing on navigation meshes ...",
-        image: engine_asset_editing_speImg,
-        content_images: [
-            "edit_mode_spe_0.png", "edit_mode_spe_1.png",
-            "edit_mode_spe_2.png", "edit_mode_spe_3.png",
-            "edit_mode_spe_4.png", "edit_mode_spe_5.png",
-            "edit_mode_spe_6.png", "edit_mode_spe_7.png",
-            "edit_mode_spe_8.png", "edit_mode_spe_9.png",
-        ],
+        title: "Progress on Navigation Meshes for Map Editing Mode",
+        date: "May 24, 2025",
+        description: "Over the past few weeks, I’ve made significant progress on the navigation mesh system for my map editing mode, a core feature ...",
+        image: engine_map_editor_navmeshImg,
         content: engine_map_editor_navmesh,
         categories: ["Editor", "Engine", "NavMesh"],
         route: "/2025-05-19-engine-map-editor-navmesh"

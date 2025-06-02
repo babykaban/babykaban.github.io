@@ -1,43 +1,57 @@
-As I mentioned in my previous post, this entry is about my recent work on the map editing mode. I’ve been focusing on navigation meshes for the past few weeks and have made significant progress. I’m now close to completing this feature and testing it in the simulation. Let’s go through what I had before and what I’ve added recently.
+Over the past few weeks, I’ve made significant progress on the navigation mesh system for my map editing mode, a core feature for creating interactive game levels. This post dives into why I chose navigation meshes, the details of what I’ve built, the challenges I’ve faced, and the next steps I’m tackling. For those unfamiliar, the map editing mode in my game engine allows users to design game environments, including ground tiles, entity placement, and navigation meshes. My current focus is on navigation meshes, which are critical for enabling entities to move intelligently within the environment. Let’s explore the motivation behind this choice and my recent progress.
 
-The main goal of the map editing mode is to create "levels." By levels, I mean the environment and its components, including entity placements, ground tiles, and navigation meshes — my current focus. The ground design feature is already in place: I can easily select and edit tile textures and set their rendering level or height to ensure the correct rendering order. However, entity placement and navigation mesh generation depend on each other. Entities need the mesh to simulate movement, while navigation meshes require an entity’s collision polygon (if it’s static) to define walkable areas. Because of this, I decided to tackle navigation meshes first.
+## Why Navigation Meshes?
 
-#### What Are Navigation Meshes?
+The decision to use navigation meshes was inspired by games like DOTA 2, where players use right-click to move, freeing their left hand to cast spells or perform other actions. My game heavily emphasizes spell-casting, requiring players to use their left hand to select and combine elements into spells. To mirror this fluid interaction, I needed a pathfinding system that allows natural, intuitive movement with minimal input. Initially, I used grid-based pathfinding, but it resulted in unnatural entity movement and clunky player navigation. Navigation meshes solve this by enabling smooth, organic paths. Additionally, they simplify collision detection: entities can only move within the mesh’s polygons, and anything outside is considered a collision. For interactions like spells hitting monsters, I use simple collision boxes, keeping the system efficient and straightforward.
 
-Navigation meshes are a set of polygons that represent walkable space in a level. These polygons are convex, meaning any two points within a polygon (including its edges) can be connected by a straight line. This property makes pathfinding much simpler and more efficient.
+## What Are Navigation Meshes?
 
-**🖼️ [Image Placeholder 1: Diagram of a navigation mesh]**  
-*Description: A simple diagram showing a few convex polygons representing walkable areas in a game level. Include labels for key elements like polygons, edges, and perhaps a sample path.*
+A navigation mesh, or navmesh, is a set of polygons that defines the walkable areas in a game environment. These polygons are convex, meaning any two points within a polygon (including its edges) can be connected by a straight line without leaving the polygon. This property simplifies pathfinding, making it faster and more efficient. The process of creating and using a navmesh involves several key steps:
 
-To make navigation meshes work, several steps are required:
-- **Define or generate polygons** that represent the walkable space.
-- **Partition these polygons into convex parts.** Larger convex parts result in faster and more efficient pathfinding.
-- **Build a connectivity graph** to show which polygons are adjacent to each other.
-- **Find a path** between two points, A (start) and B (end), using the A* algorithm or a similar method.
-- **Straighten the path** using the funnel algorithm.
+1. **Define or generate polygons** representing walkable spaces.
+2. **Partition these polygons** into convex shapes for optimal pathfinding.
+3. **Build a connectivity graph** to identify which polygons are adjacent.
+4. **Find a path** from a start point (A) to an end point (B) using the A* algorithm or a similar method.
+5. **Apply the funnel algorithm** to straighten the path for smoother movement.
 
 The result is an array of points that an entity can follow to reach its destination.
 
-#### My Progress So Far
+## Current Progress
 
-I already have a feature to draw and save polygons. The next step is to partition them into convex parts. The simplest approach is to triangulate the polygons, but this creates a connectivity graph with many nodes, slowing down the algorithm more than necessary. Instead, I merge triangles into larger convex shapes to optimize performance, resulting in a set of convex polygons.
+### Ground Tile Design
 
-For the A* algorithm, I need a graph of these polygons. My current method is straightforward: I check all edges of each polygon and mark two polygons as neighbors if they share an edge.
+The map editing mode already supports designing ground tiles. Users can select and edit tile textures and specify their rendering level (height) to ensure the correct rendering order. This feature is complete and works seamlessly.
 
-I’ve previously written an A* algorithm for my first demo, where nodes were the center points of tiles. Now, I’m adapting it so each node represents a polygon. A* relies on a heuristic — typically the distance between points — to guide the search. To support this, I calculate the center point of each polygon during graph creation and store it in the node. This lets me compute the heuristic as the distance between polygon centers. With a few tweaks to the existing algorithm, it runs smoothly.
+### Navigation Meshes and Entity Placement
 
-I also found a funnel algorithm implementation in C, added it to my codebase, and got it working. However, it needs some adjustments to make it easier to use.
+Navigation meshes and entity placement are interdependent. Entities rely on the navmesh to simulate movement, while static entities’ collision polygons help define the walkable space by marking non-walkable areas. To address this, I prioritized building the navigation mesh system.
 
-#### Checking Points in Polygons
+I’ve implemented a feature to draw and save polygons, which serve as the foundation for the navmesh. The next step was partitioning these polygons into convex shapes. The simplest approach is triangulation, where polygons are split into triangles. However, this creates many small polygons, resulting in a large connectivity graph that slows down pathfinding. To optimize performance, I merge triangles into larger convex shapes where possible, reducing the number of polygons while maintaining convexity.
 
-One gap remains: I don’t yet have a way to check if a point is inside a polygon or identify which polygon contains it. This is critical for determining start and end points for pathfinding. I’m considering two options:
+### Building the Connectivity Graph
 
-1. **Ray Casting**: Cast a ray from the point (usually along the positive x-axis) and count how many polygon edges it intersects. An odd number of intersections means the point is inside; an even number means it’s outside. I’ll need to handle edge cases like vertex intersections. The time complexity is O(n), where n is the number of edges.
-2. **Triangulation Method**: Since my polygons are convex, I can quickly triangulate them. Then, for each triangle, I’ll use a mathematical test to check if the point is inside. This also has O(n) complexity.
+For the connectivity graph, I took a straightforward approach: I check all edges of each polygon and mark polygons as neighbors if they share an edge. This graph is used by the A* algorithm to find paths between polygons.
 
-The decision comes down to which method requires fewer operations. I haven’t settled on one yet, so my next step is to implement both and measure their performance.
+### Implementing A* Pathfinding
 
-### Wrap-up
-I am sorry for vague explanation, the reson is that I want to finish this thing and then make a post with visual explanations and demo of how each step works.
+I previously wrote an A* algorithm for a demo where nodes were the center points of tiles. For the navmesh, I adapted this algorithm to use polygons as nodes. To calculate the heuristic (an estimate of the distance to the goal), I compute the center point of each polygon during graph creation and store it within the node. The heuristic is then the distance between polygon centers. With a few tweaks, the A* algorithm now works reliably with the navmesh.
 
-That’s all for this update!
+### Funnel Algorithm
+
+I integrated a funnel algorithm (based on a C implementation) to straighten paths generated by A*. While it works, it requires simplification to make it more user-friendly. I’ll refine this in the coming weeks.
+
+### Point-in-Polygon Testing
+
+A critical feature I need to implement is determining whether a given point lies within a polygon and identifying which polygon it belongs to. This is essential for mapping start and end points to the correct polygons for pathfinding. I’m considering two approaches:
+
+1. **Ray Casting**: Cast a ray (typically along the positive x-axis) from the point and count the number of edge intersections. If the number is odd, the point is inside; if even, it’s outside. I’ll need to handle edge cases like vertex intersections. The time complexity is O(n), where n is the number of polygon edges.
+
+2. **Triangulation-Based Testing**: Triangulate the convex polygon (a fast process since it’s already convex) and perform an “in-triangle” test for each triangle using basic math operations. This approach also has O(n) complexity but may involve fewer operations depending on the polygon’s structure.
+
+I haven’t decided which method to use yet. My next step is to implement and benchmark both approaches to determine which is faster and more reliable.
+
+## Next Steps
+
+My immediate focus is to finalize the point-in-polygon testing by comparing the ray-casting and triangulation-based methods. Once that’s resolved, I’ll integrate the navigation mesh system into the simulation to test entity movement. After that, I plan to polish the funnel algorithm and create a detailed post with visual explanations and a demo showcasing each step of the process.
+
+Thank you for following my progress! I’m excited to wrap up this feature and share a more comprehensive update soon. Stay tuned for the demo!
