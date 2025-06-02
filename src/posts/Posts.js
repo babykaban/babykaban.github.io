@@ -1,3 +1,4 @@
+import engine_navigation_meshes from '../posts/2025-06-01-engine-navigation-meshes.md';
 import engine_map_editor_navmesh from '../posts/2025-05-19-engine-map-editor-navmesh.md';
 import engine_asset_editing_spe from '../posts/2025-05-04-engine-asset-editing-specif.md';
 import engine_asset_editing from '../posts/2025-04-12-engine-asset-editing.md';
@@ -12,6 +13,7 @@ import editor_update_triangle_subtraction from '../posts/2024-08-18-editor-updat
 import editor_update_map_mode from '../posts/2024-08-04-editor-update-map-mode.md';
 import editor_update_sswm_format from '../posts/2024-07-29-editor-update-sswm-format.md';
 
+import engine_navigation_meshesImg from '../assets/img/engine_navigation_meshes.png';
 import engine_map_editor_navmeshImg from '../assets/img/engine_map_editor_navmesh.png';
 import engine_asset_editing_speImg from '../assets/img/engine_asset_editing_spe.png';
 import engine_asset_editingImg from '../assets/img/engine_asset_editing.png';
@@ -27,6 +29,24 @@ import editor_update_map_modeImg from '../assets/img/editor_picture_1.png';
 import editor_update_sswm_formatImg from '../assets/img/editor_picture_4.png';
 
 const Posts = [
+    {
+        title: "Implementing Navigation Meshes in My Game Engine",
+        date: "June 1, 2025",
+        description: "In my previous blog post, I explained what navigation meshes are and why they're essential for my game. In this post, I'll walk you through how I implemented this functionality in my game engine, breaking down the process step by step.",
+        image: engine_navigation_meshesImg,
+        content_images: [
+            "navigation_meshes_0.png", "navigation_meshes_1.png",
+            "navigation_meshes_2.png", "navigation_meshes_3.png",
+            "navigation_meshes_4.png", "navigation_meshes_5.png",
+            "navigation_meshes_6.png", "navigation_meshes_7.png",
+            "navigation_meshes_8.png", "navigation_meshes_9.png",
+            "navigation_meshes_10.png"
+        ],
+        content: engine_navigation_meshes,
+        categories: ["Editor", "Engine", "NavMesh"],
+        route: "/2025-06-01-engine-navigation-meshes"
+    },
+
     {
         title: "Progress on Navigation Meshes for Map Editing Mode",
         date: "May 24, 2025",
