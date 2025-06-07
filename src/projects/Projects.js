@@ -1,3 +1,4 @@
+import GolfBallsAdventure from '../pages/GolfBallsAdventure.jsx';
 import SpellweaverSaga from '../pages/SpellweaverSaga.jsx';
 import Clipper from '../pages/Clipper.jsx';
 
@@ -5,6 +6,14 @@ import project_1Img from '../assets/img/project_img0.png';
 import project_2Img from '../assets/img/clipper_logg.png';
 
 const Projects = [
+    {
+        title: "Golf Balls Machine Project",
+        description: "When I started my new role as a Golf Balls Technician, my primary task was to sort golf balls by brand, sub-brand, and quality. While the job is straightforward, its repetitive nature often leads to errors due to lack of attention or engagement...",
+        image: project_1Img,
+        route: "/golfballs-adventure",
+        page: <GolfBallsAdventure />
+    },
+
     {
         title: "Spellweaver Saga",
         description: "Spellweaver Saga is a roguelike adventure where players explore islands created after a cataclysm, seeking to restore the world. Using a deep spell crafting system, everything from combat to puzzles revolves around elemental magic.",
